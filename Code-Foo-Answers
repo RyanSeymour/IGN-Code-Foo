@@ -77,7 +77,9 @@ function myResponse() {
 
 
 
-3. Program for Question #3 was wrote in Java. (JAR File of this program can be found in my GitHub IGN Code Foo Respitory Download Section.)
+3. Program for Question #3 was wrote in Java. (Compressed file of this program can be found in 
+my GitHub IGN Code Foo Respitory Download Section.)
+
 import java.util.Scanner;
  
 public class LicensePlateMaker {
