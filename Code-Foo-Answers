@@ -3,14 +3,26 @@ Due By April 30th 2012
 By Ryan Seymour
 rseymour027@gmail.com
 606-694-1231
+
+
 1. The following are the steps I would take in determining how many ping pong balls it would take to fill a school bus.
 Step 1: Determine internal area of bus.
 Step 2: Determine area of single seat.
 Step 3: Multiply area of seat by total number of seats. 
 Step 4:  Subtract total area of seats from internal area of bus.
 Step 5: Determine area  of ping pong ball. 
-Step 6: Divide area of bus by area of ping pong ball.  Result is approximate number of ping pong balls it would take to fill bus.
-2. Using a liquid layout for a website is helpful so a developer knows that the site will look the same for end users regardless of their devices resolution. Liquid layout allows for website contents to be stretched or shrunk to fill the end users screen.  My example of coding a liquid layout can be seen online at http://www.ryanseymour.net/CodeFoo.html, in my GitHub Repository download section, or  pasted below.
+Step 6: Divide area of bus by area of ping pong ball.  
+Result is approximate number of ping pong balls it would take to fill bus.
+
+
+
+2. Using a liquid layout for a website is helpful so a developer knows that the site will
+look the same for end users regardless of their devices resolution. Liquid layout allows 
+for website contents to be stretched or shrunk to fill the end users screen.  My example 
+of coding a liquid layout can be seen online at http://www.ryanseymour.net/CodeFoo.html, 
+in my GitHub Repository download section, or  pasted below.
+
+
 CodeFoo.html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
@@ -29,6 +41,8 @@ CodeFoo.html
 <div id="footer">RyanSeymour</div> 
 </body> 
 </html>
+
+
 CodeFoo.css
 @charset "UTF-8"; 
 /* CSS Document */ 
@@ -54,10 +68,13 @@ CodeFoo.css
 	text-align: center; 
 	-moz-border-radius: 1em; 
 	-webkit-border-radius: 1em;}
+
+
 CodeFoo.js
 function myResponse() {    
        alert("Because I'm awesome like that!") ; 
 }
+
 
 
 3. Program for Question #3 was wrote in Java. (JAR File of this program can be found in my GitHub IGN Code Foo Respitory Download Section.)
