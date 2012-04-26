@@ -1,0 +1,99 @@
+IGN Code Foo Apllication Questions
+Due By April 30th 2012
+By Ryan Seymour
+rseymour027@gmail.com
+606-694-1231
+1. The following are the steps I would take in determining how many ping pong balls it would take to fill a school bus.
+Step 1: Determine internal area of bus.
+Step 2: Determine area of single seat.
+Step 3: Multiply area of seat by total number of seats. 
+Step 4:  Subtract total area of seats from internal area of bus.
+Step 5: Determine area  of ping pong ball. 
+Step 6: Divide area of bus by area of ping pong ball.  Result is approximate number of ping pong balls it would take to fill bus.
+2. Using a liquid layout for a website is helpful so a developer knows that the site will look the same for end users regardless of their devices resolution. Liquid layout allows for website contents to be stretched or shrunk to fill the end users screen.  My example of coding a liquid layout can be seen online at http://www.ryanseymour.net/CodeFoo.html, in my GitHub Repository download section, or  pasted below.
+CodeFoo.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+ <link rel="stylesheet" href="CodeFoo.css" type="text/css" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>IGN Code Foo Question #2</title> 
+<script type="text/javascript" language="javascript" src="CodeFoo.js"></script> 
+</head>  
+<body> 
+<div id="header">IGN Code Foo Question #2</div>
+ <div id="center_left">
+ <p>adsfdsafsdfsdfs dfdafsfsdfasfsf asfsdfsdf ssdfsdfsdfsd sdfsdafsfsdf sdfsdfsdfs </p></div>
+ <div id="content">
+<input type="button" id="myResponse" value="Why should I be a part of IGN Code Foo?" onClick="myResponse();" /> </div> <div id="center_right"> <p>adsfdsafsdfsdfs dfdafsfsdfasfsf asfsdfsdf ssdfsdfsdfsd sdfsdafsfsdf sdfsdfsdfs </p></div>  
+<div id="footer">RyanSeymour</div> 
+</body> 
+</html>
+CodeFoo.css
+@charset "UTF-8"; 
+/* CSS Document */ 
+ #header {
+   	background-color: #99CCFF;
+ 	text-align: center; 
+	-moz-border-radius: 1em; 
+	-webkit-border-radius: 1em;} 
+#center_left{ 
+	background-color:#99CCFF; 
+	float: left; 
+	width: 25%;}  
+#content{
+ 	float: left; 
+	text-align: center; 
+	width: 50%;} 
+#center_right{
+ 	background-color: #99CCFF; 
+	float: right; 	width: 25%;}  
+#footer {   	
+               clear: both; 
+	background-color: #99CCFF; 
+	text-align: center; 
+	-moz-border-radius: 1em; 
+	-webkit-border-radius: 1em;}
+CodeFoo.js
+function myResponse() {    
+       alert("Because I'm awesome like that!") ; 
+}
+
+
+3. Program for Question #3 was wrote in Java. (JAR File of this program can be found in my GitHub IGN Code Foo Respitory Download Section.)
+import java.util.Scanner;
+ 
+public class LicensePlateMaker {
+
+	public static void main(String[] args) {
+			Scanner input = new Scanner(System.in);
+// Declare variables
+int totalPlatesNeeded;
+int numPatterns = 0;
+int alphaPatterns = 0;
+boolean finishedPlates = false;
+
+//-------------------------------------------- //
+	// user input
+	System.out.println("Please input the number of license plates needed.");
+	totalPlatesNeeded = input.nextInt();
+		// license plate logic
+		// if production is complete
+	do{	
+	if (totalPlatesNeeded <=0){
+			System.out.println("All license plates were created.");
+			System.out.println("Total of number patterns used were " +
+			numPatterns + " and a total of " + alphaPatterns + " alphabet " +
+			"patterns were used.");
+					finishedPlates = true;
+			// if production is not complete
+			}else if (totalPlatesNeeded <=20){
+					numPatterns++;
+					totalPlatesNeeded = totalPlatesNeeded  - 10;
+			} else if (totalPlatesNeeded >20){
+					alphaPatterns++;;
+					totalPlatesNeeded = totalPlatesNeeded  - 25;
+			}
+		}while (finishedPlates == false);	
+	} 
+}
